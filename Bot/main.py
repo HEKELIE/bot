@@ -46,7 +46,7 @@ def main():
     app.run_webhook(
         listen="0.0.0.0",
         port=int(os.getenv("PORT", 8443)),
-        webhook_url=f"{RAILWAY_URL}{webhook_path}"
+        webhook_url=f"{RAILWAY_URL}/telegram-webhook",
     )
 
 # 确保这段脚本作为“主程序”执行时才会运行 main()，而不是被别的模块导入时执行。
